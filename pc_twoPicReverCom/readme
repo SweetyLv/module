@@ -1,1 +1,18 @@
-翻转为三个商品的组件
+鼠标经过翻转为三个商品的组件
+
+1）relacity
+2）filter:blur(5px);
+3）transition:.3s linear; 
+4) 注意对象的使用becareful to use the object ：.big_img_con img   small_img_wrap
+
+.big_img_two_list:hover .big_img_con img{
+	-webkit-filter:blur(5px);
+	filter:blur(5px);
+}
+.big_img_two_list:hover  .small_img_wrap{
+	opacity:1;
+	filter:alpha(opacity=100);
+	pointer-events:auto;
+	transition:.3s linear;
+	-webkit-transition:.3s linear;
+}
