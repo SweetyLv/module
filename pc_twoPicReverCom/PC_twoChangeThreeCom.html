@@ -1,0 +1,70 @@
+﻿<link href="${PCRESOURCE_PATH}res/PCcss/PC_twochangethreecom.css" rel="stylesheet" type="text/css">
+
+<div class="big_img_two_con" style="background:url(${oneimg_bgimg}) no-repeat 50% 0;background-color:#${oneimg_bgcolor}">
+    <div class="big_img_two_wrap">
+        <div class="big_img_two_list">
+            <a class="big_img_con" target="_blank" href="${oneimg_link}">
+                <img src="${oneimg_src}">
+            </a>
+				<div class="small_img_wrap">
+					<ul class="small_img_up">
+						#set($j=0)
+						#foreach($item in ${dataList1})
+						#if($j<3)
+						<li class="small_img_li" prodno="$item.get('prod_no')">
+							#set($str=$!{item.get('prod_no')})
+							#set($strleng=$str.length() - 3)
+							#set($str=$str.substring($string,$str.length()))
+							<a class="goods_img" target="_blank" href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html">
+								<img class="small_img_img1 lazy" data-original="${PCIMAGE_PATH}$item.get('default_pic')" width="121" height="103" src="${PCIMAGE_PATH}res/mall/image/big_load.gif" style="display:inline;">
+							</a>
+							<a class="goods_name" href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">$item.get('commo_name')</a>
+							<span class="goods_pri">￥$item.get('sell_price')</span>
+						</li>
+						#set($j=$j+1)
+						#end
+						#end
+					</ul>
+					<a target="_blank" href="${small_banner_link_01}">
+						<img class="small_img_img2" src="${small_banner_src_01}">
+					</a>
+				</div>
+        </div>
+        <div class="big_img_two_list">
+            <a class="big_img_con" target="_blank" href="${twoimg_link}">
+                <img src="${twoimg_src}">
+            </a>
+				<div class="small_img_wrap">
+					<ul class="small_img_up">
+						#set($j=0)
+						#foreach($item in ${dataList2})
+						#if($j<3)
+						<li class="small_img_li" prodno="$item.get('prod_no')">
+							#set($str=$!{item.get('prod_no')})
+							#set($strleng=$str.length() - 3)
+							#set($str=$str.substring($string,$str.length()))
+							<a class="goods_img" target="_blank" href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html">
+								<img class="small_img_img1 lazy" data-original="${PCIMAGE_PATH}$item.get('default_pic')" width="121" height="103" src="${PCIMAGE_PATH}res/mall/image/big_load.gif" style="display:inline;">
+							</a>
+							<a class="goods_name" href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">$item.get('commo_name')</a>
+							<span class="goods_pri">￥$item.get('sell_price')</span>
+						</li>
+						#set($j=$j+1)
+						#end
+						#end
+					</ul>
+					<a target="_blank" href="${small_banner_link_02}">
+						<img class="small_img_img2" src="${small_banner_src_02}">
+					</a>
+				</div>
+        </div>
+        <div style="clear:both;"> </div>
+    </div>
+</div>
+<script>
+$(function(){
+	$('.small_img_wrap').find('.lazy').mouseover(function(){
+          $(this).show().lazyload();
+  })
+});
+</script>
