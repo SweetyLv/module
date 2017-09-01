@@ -1,0 +1,117 @@
+.big_img_two_con{
+    width:100%;
+    min-width:1230px;
+    height:400px;
+}
+.big_img_two_wrap{
+    margin:0 auto;
+    width:1200px;
+	 height:400px;
+}
+.big_img_two_list{
+    float:left;
+    width: 550px;
+    height:380px;
+	 position:relative;
+}
+
+.big_img_two_list:nth-child(1){
+    margin: 10px 33px;
+}
+.big_img_two_list:nth-child(2){
+    margin: 10px 33px 10px 0px;
+}
+
+.big_img_two_list a img{
+    display:block;
+    width: 550px;
+    height:380px;
+    border:none;
+}
+.big_img_two_list:hover .big_img_con img{
+	-webkit-filter:blur(5px);
+	filter:blur(5px);
+}
+.big_img_two_list:hover  .small_img_wrap{
+	opacity:1;
+	filter:alpha(opacity=100);
+	pointer-events:auto;
+	transition:.3s linear;
+	-webkit-transition:.3s linear;
+}
+.big_img_two_list .small_img_wrap{
+   position:absolute;
+	width:520px;
+	height:360px;
+	top:10px;
+	left:15px;
+	background-color:#fff;
+	background-position:center 100px;
+	border-radius:4px;
+	overflow:hidden;
+	filter:alpha(opacity=0);
+	opacity:0;
+}
+.small_img_up{
+	height:236px;
+	border-bottom:1px dotted #333;
+	margin-top:10px;
+}
+.small_img_up a{
+	display:inline-block;
+	width:166px;
+	height:166px;
+}
+.small_img_up a img{
+	width:166px;height:166px;
+}
+.small_img_up:nth-child(3n){
+	margin-left:20px;
+	margin-right:20px;
+}
+.small_img_wrap .small_img_up .small_img_li{
+	float:left;
+}
+.small_img_wrap .small_img_up .small_img_li .goods_img img{
+	width:166px;
+	height:166px;
+}
+.small_img_wrap .small_img_up .small_img_li .goods_img:hover{
+	filter:alpha(opacity=80);
+	opacity:0.8;
+}
+.small_img_wrap .small_img_up .small_img_li .goods_name{
+	display:block;
+	width:166px;
+	height:36px;
+	line-height:18px;
+	overflow:hidden;
+	text-align:center;
+}
+.small_img_wrap .small_img_up .small_img_li .goods_name a{
+	font-size:10px;
+}
+.small_img_wrap .small_img_up .small_img_li .goods_pri{
+	display:block;
+	width:166px;
+	height:24px;
+	font-size:20px;
+	line-height:24px;
+	color:#ed3344;
+	margin-top:10px;
+	text-align:center;
+}
+.small_img_wrap .small_img_img2{
+	float:left;
+	margin-left:29px;
+	margin-right:20px;
+}
+.small_img_wrap .small_img_img2:hover{
+	opacity:70;
+	filter:alpha(opacity=0.7);
+}
+.big_img_two_list .small_img_img2{
+	width:500px;
+	height:100px;
+	margin:6px 15px;
+}
