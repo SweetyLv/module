@@ -1,0 +1,33 @@
+<link href="${PCRESOURCE_PATH}res/PCcss/twochangethree.css" rel="stylesheet" type="text/css">
+
+#if(${oneimg})
+
+<div class="big_img_two_con" style="background:url(${oneimg_bgimg}) no-repeat 50% 0;background-color:#${oneimg_bgcolor}">
+    <div class="big_img_two_wrap">
+        #foreach($item in ${oneimg})
+        <div class="big_img_two_list">
+            <a class="big_img_con" target="_blank" href="${item.get('oneimg_link')}">
+                <img src="$item.get('oneimg_src')">
+            </a>
+				<div class="small_img_wrap">
+					<div class="small_img_up">
+						 <a class="small_img_a" target="_blank" href="${item.get('small_link_01')}">
+							<img class="small_img_img1" src="${item.get('small_img_01')}">
+						 </a>
+						 <a class="small_img_a" target="_blank" href="${item.get('small_link_02')}">
+							<img class="small_img_img1" src="${item.get('small_img_02')}">
+						 </a>
+						 <a class="small_img_a" target="_blank" href="${item.get('small_link_03')}">
+							<img class="small_img_img1" src="${item.get('small_img_03')}">
+						 </a>
+					</div>
+					<a target="_blank" href="${item.get('small_banner_link')}">
+						<img class="small_img_img2" src="${item.get('small_banner_src')}">
+					</a>
+				</div>
+        </div>
+        #end
+        <div style="clear:both;"> </div>
+    </div>
+</div>
+#end
