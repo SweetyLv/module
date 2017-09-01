@@ -1,0 +1,52 @@
+<link href="${PCRESOURCE_PATH}res/PCcss/country_pattern01.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.map_img_wrap .map_pic_w{
+	background:url(${England_show_src}) no-repeat;width:1210px;height:550px;
+}
+</style>
+<div class="map_img_wrap">
+	<div class="map_pic_w rel">
+		<div class="map_img z_28 abs"><img src="${map_img}"></div>
+		
+		<!-- img b 英国国家图片（尺寸：1210*550px） -->
+		<div class="England_show show z_20 abs opc_0"><img src="${England_show_src}"></div>
+		<div class="America_show show z_20 abs opc_0"><img src="${America_show_src}"></div>
+		<div class="Holland_show show z_20 abs opc_0"><img src="${Holland_show_src}"></div>
+		<div class="Germany_show show z_20 abs opc_0"><img src="${Germany_show_src}"></div>
+		<div class="France_show show z_20 abs opc_0"><img src="${France_show_src}"></div>
+		<div class="Japan_show show z_20 abs opc_0"><img src="${Japan_show_src}"></div>
+		<div class="Korea_show show z_20 abs opc_0"><img src="${Korea_show_src}"></div>
+		<div class="HongTai_show show z_20 abs opc_0"><img src="${HongTai_show_src}"></div>
+		<div class="Europe_show show z_20 abs opc_0"><img src="${Europe_show_src}"></div>
+		<!-- icon b 英国图标信息（尺寸：50*50px） -->
+		#foreach($item in ${England})
+		<div class="England abs icon" style="left:519px; top:126px;"><a href="$item.get('England_link')" target="_blank"><img src="$item.get('England_src')"></a></div>
+		#end
+		#foreach($item in ${America})
+		<div class="America abs icon" style="left:183px; top:155px;"><a href="$item.get('America_link')" target="_blank"><img src="$item.get('America_src')"></a></div>
+		#end
+		#foreach($item in ${Holland})
+		<div class="Holland abs icon" style="left:571px; top:157px;"><a href="$item.get('Holland_link')" target="_blank"><img src="$item.get('Holland_src')"></a></div>
+		#end
+		#foreach($item in ${Germany})
+		<div class="Germany abs icon" style="left:624px; top:175px;"><a href="$item.get('Germany_link')" target="_blank"><img src="$item.get('Germany_src')"></a></div>
+		#end
+		#foreach($item in ${France})
+		<div class="France abs icon" style="left:521px; top:199px;"><a href="$item.get('France_link')" target="_blank"><img src="$item.get('France_src')"></a></div>
+		#end
+		#foreach($item in ${Japan})
+		<div class="Japan abs icon" style="left:1021px; top:214px;"><a href="$item.get('Japan_link')" target="_blank"><img src="$item.get('Japan_src')"></a></div>
+		#end
+		#foreach($item in ${Korea})
+		<div class="Korea abs icon" style="left:961px; top:221px;"><a href="$item.get('Korea_link')" target="_blank"><img src="$item.get('Korea_src')"></a></div>
+		#end
+		#foreach($item in ${HongTai})
+		<div class="HongTai abs icon" style="left:931px; top:297px;"><a href="$item.get('HongTai_link')" target="_blank"><img src="$item.get('HongTai_src')"></a></div>
+		#end
+		#foreach($item in ${Europe})
+		<div class="Europe abs icon" style="left:1064px; top:484px;"><a href="$item.get('Europe_link')" target="_blank"><img src="$item.get('Europe_src')"></a></div>
+		#end
+		<!-- icon e -->
+	</div>
+</div>
+<script type="text/javascript" src="${PCRESOURCE_PATH}res/PCjs/country_pattern01.js"></script>
