@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+.container {position: relative;margin: 0 auto;height: auto;width: 1230px;}
+
+/* 添加购物车提示 */
+.CartTip{width: 380px; clear:both; background:#fff; border:4px #dddddd solid;padding:6px; cursor: pointer;}
+.CartTip a.close{width:16px; height:17px;background: url(../../image/shopcart/noticon.gif) no-repeat 0 -532px;float:right;}
+.CartTip .mc{text-align:left;padding:15px 10px 10px;letter-spacing: 2px;}
+.CartTip .mc p{line-height:2;margin-top:10px;}
+.CartTip .mc h3{display:inline;font-weight:600;font-size:14px; margin-left: 10px;}
+.CartTip .btns{text-align:center;margin:0 0 15px 0;}
+.CartTip .btnR{width:90px; height:25px; line-height:25px;text-align:center; display:inline-block; background:url(../../image/shopcart/loginBtn.gif) no-repeat -139px -313px; color:#fff; text-decoration:none; margin:0 5px;}
+.CartTip .btnR:hover{ text-decoration:none;}
+.CartTip a.blue{ text-decoration:none;margin-left:10px;}
+.CartTip a.blue:hover{ text-decoration:underline;color:#005AA0;}
