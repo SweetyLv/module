@@ -1,0 +1,102 @@
+.activity_entry{
+	position: relative;
+}
+.activity_entry .activity_tit{
+	overflow: hidden;
+	margin-top: .2rem;
+	height: 2.2rem;
+	text-align: center;
+	color: #666;
+	background: #fff;
+	border-bottom: 1px solid #eb6100;
+}
+.activity_time_list{
+	padding:.3rem 0;
+	width:4rem;
+	height:2.2rem;
+	text-align: center;
+}
+.activity_time_list .activity_start_time{
+	font-size: .8rem;
+	line-height: .8rem;
+}
+.activity_time_list .activity_status{
+	font-size:1rem;
+}
+/*
+.activity_time_list.activity_active{
+	color:#${act_color};
+	background: #${bg_color};
+}
+*/
+.activity_time_list.activity_active{
+	color:#fff;
+	background: #eb6100; 
+}
+.activity_con{
+	overflow: hidden;
+	width: 100%;
+	height: 12rem;
+	background: #fff;
+}
+.activity_goods{
+	padding: .25rem;
+	width:9.65rem;
+	/* height: 4rem; by sweety*/ 
+	margin-bottom: .2rem;
+	background: #fff;
+}
+.activity_goods .activity_goods_img img{
+	display: block;
+	width: 7.5rem;
+	height: 7.5rem;
+	margin:.25rem auto; 
+}
+
+.activity_goods_wrap .activity_goods_name{
+	overflow: hidden;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -o-box;
+	display: box;
+	margin: .25rem .5rem .1rem;
+	height: 2rem;
+	font-size: .7rem;
+	line-height: 1rem;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+}
+.activity_goods_icon{
+	height:1rem;
+}
+.activity_goods_icon img{
+	display: block;
+	height:1rem;
+}
+.activity_goods_pri{
+	margin-top:.2rem;
+	height: .8rem;
+	font-size: .7rem;
+	line-height: .8rem;
+	color: #eb6100;
+}
+.hot_recommond_list_price {
+	padding: 0 .5rem .25rem;
+}
+.hot_recommond_list_price div:first-child {
+	padding-right:.15rem;
+	font-size:.85rem;
+	line-height:1rem;
+	color:#ff9600;
+}
+.hot_recommond_list_price div:nth-child(2) {
+	font-size: .6rem;
+	line-height:1.15rem;
+	text-decoration:line-through;
+	color:#999;
+}
+.vertical_floor_con {
+	background: #fff;
+	border-top: 1px solid #d7d7d7;
+}
