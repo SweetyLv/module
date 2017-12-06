@@ -1,0 +1,88 @@
+<link rel="stylesheet" type="text/css" href="${RESOURCE_PATH}css/seckill_countDown_noTop.css">
+
+<div class="seckill_activity" id="seckill_activity${seckill_activity_id}" style="background:#${seckill_bg}">
+        #foreach($item in ${seckill_time})
+	<div class="seckill_activity_time" start="$item.get('seckill_start')" end="$item.get('seckill_end')">
+            <a href="${item.get('seckill_time_link')}" class="external">
+			<i class="pull-left"></i>
+			<div class="pull-left">
+		        <span class="hour">00</span> ：
+		        <span class="minute">00</span> ：
+		        <span class="second">00</span>
+			</div>
+	        </a>
+	</div>
+        #end
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	//console.log('#seckill_activity${seckill_activity_id}');
+	start_end_time${seckill_activity_id}();
+})
+function start_end_time${seckill_activity_id}(){
+	var nowdate = new Date();
+	var nowdatem = nowdate.getTime();
+	$('#seckill_activity${seckill_activity_id} .seckill_activity_time').each(function(){
+		var start = $(this).attr('start');
+		var startm = new Date(start.replace(/-/g, '/')).getTime();
+
+		var end = $(this).attr('end');
+		var endm = new Date(end.replace(/-/g, '/')).getTime();
+		if(nowdatem < startm){
+			$(this).addClass('start').siblings().removeClass('start');
+			$('#seckill_activity${seckill_activity_id} .seckill_activity_time').removeClass('end');
+			$('#seckill_activity${seckill_activity_id} .seckill_activity_time').hide();
+			$(this).show().find('i').text('距离下一次秒杀开始还有：');
+			return false;
+		}
+		if(nowdatem > startm && nowdatem < endm){
+			$(this).addClass('end').siblings().removeClass('end');
+			$('#seckill_activity${seckill_activity_id} .seckill_activity_time').removeClass('start');
+			$('#seckill_activity${seckill_activity_id} .seckill_activity_time').hide();
+			$(this).show().find('i').text('距离本次秒杀结束还有：');
+			return false;
+		}
+
+		if($('#seckill_activity${seckill_activity_id} .seckill_activity_time').size()-1 == $(this).index()){
+			var EndTime = $('#seckill_activity${seckill_activity_id} .seckill_activity_time').eq($('#seckill_activity${seckill_activity_id} .seckill_activity_time').size()-1).attr('end');
+			var EndTimem = new Date(EndTime.replace(/-/g, '/')).getTime();
+			if(nowdatem > EndTimem){
+				$('#seckill_activity${seckill_activity_id} .seckill_activity_time').eq($('#seckill_activity${seckill_activity_id} .seckill_activity_time').size()-1).html('<i style="color:#fff;">本日秒杀活动已结束，感谢您的参与！</i>')
+				return false;
+			}
+		}
+	})
+	var starttime = $('#seckill_activity${seckill_activity_id} .start').attr('start');
+	if(starttime != '' && starttime != null && starttime != undefined){
+		countDown${seckill_activity_id}( starttime.replace(/-/g, '/') ,".start .hour",".start .minute",".start .second");
+	}
+	var endtime = $('#seckill_activity${seckill_activity_id} .end').attr('end');
+	if(endtime != '' && endtime != null && endtime != undefined){
+		countDown${seckill_activity_id}( endtime.replace(/-/g, '/') ,".end .hour",".end .minute",".end .second");
+	}
+}
+function countDown${seckill_activity_id}(time,hour_elem,minute_elem,second_elem){
+	//if(typeof end_time == "string")
+	var end_time = new Date(time).getTime(),//月份是实际月份-1
+	//current_time = new Date().getTime(),
+	sys_second = (end_time-new Date().getTime())/1000;
+	var timer = setInterval(function(){
+		if (sys_second >= 1) {
+			sys_second -= 1;
+			var hour = Math.floor((sys_second / 3600) % 24);
+			var minute = Math.floor((sys_second / 60) % 60);
+			var second = Math.floor(sys_second % 60);
+			$(hour_elem).text(hour<10?"0"+hour:hour);//计算小时
+			$(minute_elem).text(minute<10?"0"+minute:minute);//计算分
+			$(second_elem).text(second<10?"0"+second:second);// 计算秒
+		} else { 
+			$(hour_elem).text('00');//计算小时
+			$(minute_elem).text('00');//计算分
+			$(second_elem).text('00');// 计算秒
+			clearInterval(timer);
+			start_end_time();
+		}
+	}, 1000);
+}
+</script>
