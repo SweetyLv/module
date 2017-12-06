@@ -1,0 +1,38 @@
+/*
+.seckill_activity ~ header{
+	top: 2.2rem;
+}
+.seckill_activity ~ .content{
+	padding-top: 4.4rem;
+}
+*/
+.seckill_activity{
+	overflow:hidden;
+	/*position: absolute;*/
+	top:0;
+	left: 0;
+	z-index: 99;
+	width:100%;
+	height: 2.2rem;
+	background: #ed3344;
+}
+.seckill_activity a{
+	display: inline-block;
+	color: #fff;
+}
+.seckill_activity_time{
+	text-align: center;
+}
+.seckill_activity_time i{
+	display: block;
+	line-height: 2.3rem;
+}
+.seckill_activity_time span{
+	display: inline-block;
+	margin:.5rem 0;
+	width: 1.2rem;
+	height: 1.2rem;
+	line-height: 1.3rem;
+	color: #ed3344;
+	background: #fff;
+}
