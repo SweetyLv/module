@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <title>${diy_title}</title>
+      <meta name="keywords" content="${keywords}">
+      <meta name="description" content="${description}">
+
+      ${cmp_common_css_js}
+<style>
+.lazy {display: none;}
+.container img{display:block;width:100%;}
+.container {
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    width: 1263px !important; 
+    min-width:1230px;
+}
+</style>
+<!-99click测试网速 Begin-->
+<script src="http://res.gbhui.com/res/mall/js/common/comm_99click_webspeed.js"></script>
+<!-99click测试网速 End-->
+
+<!--统计访问量 begin by:JaniceLv 20141022-->
+<script type="text/javascript">
+(function() {
+    window._CiQ10275 = window._CiQ10275 || [];
+    window._CiQ10275.push(['_cookieUseRootDomain', true]);
+    var c = document.createElement('script');
+    c.type = 'text/javascript';
+    c.async = true;
+    c.charset = 'utf-8';
+    c.src = '//collect.cn.miaozhen.com/ca/10275';
+    var h = document.getElementsByTagName('script')[0];
+    h.parentNode.insertBefore(c, h);
+})();
+</script>
+<noscript>
+<link href="//collect.cn.miaozhen.com/refer/collect?i=10275&v=13922245942&pu=http%3A//%28NoScriptPageviews%29&pt=NoScriptPageviews&ru=http%3A//%28NoScriptClients%29&csh=1000&csw=1000&css=10" rel="stylesheet" type="text/css" />
+</noscript>
+<!--统计访问量 end-->
+
+</head>
+<body>
+
+<!--start 菜单导航-->
+${cmp_header}
+<!--end 菜单导航-->
+
+<!-- start 主体 -->
+<div class="container">
+
+   ${cmp_diy} 
+   
+</div>
+<!-- end主体 -->
+
+<!--start 其他内容组件-->
+${cmp_other_diy} 
+<!--end 其他内容组件-->
+
+<!--start 页尾-->
+
+${cmp_footer}
+
+<!--end 页尾-->
+  
+
+</body>
+</html>
+<!--谷歌推广begin-->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-56122971-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	   <!--谷歌推广end-->
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?cca226263c7584dc55536a8a32a782cf";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+      
+	<!--IGB全站JS Begin-->
+	<script src="http://res.gbhui.com/res/mall/js/common/common_top_by_igb.js"></script>
+	<!--IGB全站JS End-->
+	<!--99clickBegin-->
+	<script src="http://res.gbhui.com/res/mall/js/common/o_code.js"></script>
+	<!--99clickEnd--><script>
+$(function(){
+	var as=window.navigator.userAgent;
+	if(as.indexOf('Chrome')>0 || as.indexOf('safari')>0){
+	  $('.lazy').show();
+	  $('.lazy').each(function() {
+            var mc=$(this).attr('data-original');
+            if(mc!=""){
+			   $(this).attr('src',''+mc+'');
+			};
+       });
+	}else{
+       $("img.lazy").show().lazyload({
+		   effect : "fadeIn",
+           failure_limit : 15
+	   });
+	  
+	}
+});
+
+$("#littleScroll").cxScroll({
+    direction:"left",
+    step:1,
+    speed:800,
+    time:4000,
+	auto:true,
+	plus:true,
+	minus:true
+});
+</script>
+
+
+
+<script type="text/javascript">
+    window.onscroll=function(){
+        var top=window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop;
+        var node=document.getElementById('left_bar');
+        if(top>400){//20就是滚动条滚动到的位置，大于20才显示
+            node.style.display='';
+        }else{
+            node.style.display='none';
+        }
+    }
+
+       function click_scroll(word) {
+	   var scroll_offset = $("#"+word).offset();  //得到pos这个div层的offset，包含两个值，top和left
+	   $("body,html").animate({
+	    scrollTop:scroll_offset.top  //让body的scrollTop等于pos的top，就实现了滚动
+	    },1000);
+	  }
+</script>
+
+
+<!--谷歌推广begin-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-56122971-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!--谷歌推广end-->
