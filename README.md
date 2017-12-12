@@ -1,7 +1,7 @@
 ### js
 * [倒计时随手写的封装插件](https://github.com/SweetyLv/sweety_projects-bootstrap/tree/master/second_skiil_bysweety)
 * [获取当前时间的js](https://github.com/SweetyLv/sweety_node_knowlege/blob/master/getDate.md)
-* [样式赋值](https://github.com/SweetyLv/sweety_node_knowlege/tree/master/js_add_style）
+* [样式赋值](https://github.com/SweetyLv/sweety_node_knowlege/tree/master/js_add_style)
 ### CSS3
 * [translateZ](http://htmlpreview.github.io/?https://github.com/SweetyLv/sweety/blob/master/translateZ_kn.html)
 ### how to write md
