@@ -1,5 +1,8 @@
 ### Node.js
-* [第一个node.js博客项目的心得体会](http://www.qdfuns.com/notes.php?mod=view&u=15282&id=20f83fc45676cdd6af764eb435125bc4)
+* >[第一个node.js博客项目的心得体会](http://www.qdfuns.com/notes.php?mod=view&u=15282&id=20f83fc45676cdd6af764eb435125bc4)
+* >[URL&HTTP协议&GET请求&POST请求](https://www.cnblogs.com/LDSmallCat/p/4942039.html)
+* >[nodejs router.get怎么在里面调用方法](https://zhidao.baidu.com/question/1898708777239951660.html)
+* >[nodejs Express 4.x req.body req.query req.params 三种获取参数的方法](https://www.cnblogs.com/yourstars/p/5993376.html)
 
 ### 历史回顾
 * [第一个全站开发](http://htmlpreview.github.io/?https://github.com/SweetyLv/sweety_projects/blob/master/yichuan/index.html)
