@@ -1,0 +1,152 @@
+li,ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.goodlist_content_outter_sku{
+	margin-top: 10px;
+    overflow: hidden;
+    clear: both;
+    width: 1094px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.goodlist_content_inner_sku{
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow-x: hidden;
+}
+.goodlist_mul_sku{
+    width: 1094px;
+	margin-bottom: 10px;
+    height: 281px;
+}
+.goodlist_mul_sku ul{
+    width: 1094px;
+}
+.goodlist_mul_sku .import_item_inner{
+	height: 281px;
+}
+.goodlist_mul_sku>ul>li{
+    float: left;
+    list-style: none;
+}
+.goodlist_mul_sku>ul>li:nth-child(4n+1){
+    margin-left: 0px;
+}
+.goodlist_mul_sku>ul>li{
+    margin-left: 10px;
+}
+.item_pic_minsku ul li{
+	margin: 2.2px;
+	float: left;
+    width:  46px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    zoom: 1;
+}
+.item_pic_sku{
+    width: 266px;
+    height: 216px;
+}
+.item_pic_sku a{
+    display: block;
+    width: 195px;
+    height: 195px;
+    margin-left: 5px;
+    margin-top: 10px;
+    float: left;
+}
+.item_pic_sku img{
+	width: 195px;
+	height: 195px;
+}
+.item_pic_minsku{
+    width: 66px;
+    height: 216px;
+    float: left;
+}
+.item_pic_minsku>ul>li{
+    float: left;
+    list-style: none;
+    cursor: pointer;
+}
+.item_pic_minsku ul{
+    width: 48px;
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 200px;
+    overflow: hidden;
+}
+.minskuSwiper_wrap .minsku_pic img{
+    width: 46px;
+    height: 46px;
+}
+.minskuSwiper_wrap{
+    width: 46px;
+    height: 204px;
+}
+.item_info_ttt{
+    height: 65px;
+}
+.item_info_sku{
+    position: absolute;
+    width: 200px;
+    float: left;
+}
+
+.item_desc_sku{
+	overflow: hidden;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+}
+
+.item_desc_sku a {
+	display: block;
+    color: #031625;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.item_desc_sku a, a:hover, a:link, a:visited, ins {
+    outline: 0;
+    text-decoration: none;
+}
+.item_info_skudd{
+    position: relative;
+    width: 266px;
+    height: 65px;
+}
+.buy_button{
+    position: absolute;
+    width:66px;
+    height: 65px;
+    margin-left: 210px;
+}
+.buy_button img{
+    width: 48px;
+    height: 54px;
+}
+.item_pri{
+    overflow: hidden;
+    font-size: 16px;
+    color: red;
+    margin-top: 10px;
+    width: 200px;
+}
+.item_salepri{
+    width: 100px;
+    float: left;
+}
+.item_yuanpri{
+    width: 100px;
+    float: left;
+    text-decoration: line-through;
+}
+.hid_salepri,.hid_yuanpri,.hid_proname{
+    display: none;
+}
