@@ -3,6 +3,9 @@
 * >[nodejs router.get怎么在里面调用方法](https://zhidao.baidu.com/question/1898708777239951660.html)
 * >[nodejs Express 4.x req.body req.query req.params 三种获取参数的方法](https://www.cnblogs.com/yourstars/p/5993376.html)
 
+### velocity语法
+* >[Velocity !$ 和$!区别](https://www.cnblogs.com/sunxun/p/6553122.html)
+
 ### 历史回顾
 * [第一个全站开发](http://htmlpreview.github.io/?https://github.com/SweetyLv/sweety_projects/blob/master/yichuan/index.html)
 * [2016年css3和轮播效果活动页](http://htmlpreview.github.io/?https://github.com/SweetyLv/sweety_projects/blob/master/cross/index.html)
