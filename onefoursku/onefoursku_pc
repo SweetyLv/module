@@ -1,0 +1,81 @@
+<link type="text/css" rel="stylesheet" href="${PCRESOURCE_PATH}res/PCcss/gbPC_onefourpic_sku.css">
+<style>
+.item_pir{overflow: hidden;font-size: 16px;color:red;margin-top:10px;text-align:center;}</style>
+<div id="${fourfloor_id_sku}" class="goodlist_wrap_sku" style="background-color:#$bg_color;background:url($bg_img_sku)">
+	<div class="goodlist_content_outter_sku">
+		<div class="goodlist_mul_sku">
+			<ul>
+				#set($j=0)
+				#foreach($item in ${goods})
+				#if($j<20)
+				<li class="import_item_outter_sku">
+					#set($str=$!{item.get('prod_no')})
+                    #set($arr = $!{item.get('piclist')} )
+                    #set( $aa =  $arr.split("[,]"))                            
+                 	#set($strleng=$str.length-3)
+					#set($str=$str.substring($strleng,$str.length))
+					<div class="import_item_inner">
+						<div class="item_pic_sku">
+							<a class="main_pic_dd" href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">
+								#set($pic=$!{item.get('default_pic')})
+								#set($pic=$pic.substring(0,4))
+								#if('http'==$pic)
+								<img class="lazy" data-original="$item.get('default_pic')" src="${PCIMAGE_PATH}res/mall/image/big_load.gif" alt="$item.get('commo_name')" title="$item.get('commo_name')"/>	
+								#else
+								<img class="lazy" data-original="${PCIMAGE_PATH}$item.get('default_pic')" src="${PCIMAGE_PATH}res/mall/image/big_load.gif" alt="$item.get('commo_name')" title="$item.get('commo_name')"/>	
+								#end
+							</a>
+							<div class="item_pic_minsku">
+								<ul class="minskuSwiper_wrap">									#foreach($t in ${aa})
+									<li class="minsku_pic">
+										<img src="http://res.gbhui.com/$t"   width="46" height="46">
+										
+										<span class="hid_salepri">$item.get('sell_price')</span>
+										<span class="hid_yuanpri">111</span>
+										<span class="hid_proname"><a href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">$item.get('commo_name')</a></span>
+
+							</li>
+									#end
+								</ul>
+							</div>
+							#end
+						</div>
+						<div class="item_info_ttt">
+							<div class="item_info_sku">
+								<div class="item_pri">
+									<div class="item_salepri">
+										<span>￥</span>
+										<span>$item.get('sell_price')</span>
+									</div>
+									<div class="item_yuanpri">
+										<span>￥</span>
+										<span>$item.get('market_price')</span>
+									</div>
+								</div>
+								<div class="item_desc_sku">
+									<a href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">$item.get('commo_name')</a>
+								</div>
+							</div>
+							<div class="buy_button">
+								<a target="_blank" href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html">
+									<img src="http://res.gbhui.com/res/PCimg/buy.png">
+								</a>
+							</div>
+						</div> 
+					</div>
+				</li>
+                                #end
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+$(function(){
+	var num = 0;
+	$(".item_pic_minsku ul li").hover(function(){
+		num = $(this).index();
+		var ss = $(this).find("img").attr("src");
+		$(this).parents('.item_pic_sku').find('.main_pic_dd img').attr('src',ss);
+	});
+});
+</script>
