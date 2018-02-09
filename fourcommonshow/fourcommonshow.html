@@ -1,0 +1,233 @@
+<link type="text/css" rel="stylesheet" href="${PCRESOURCE_PATH}res/PCcss/gbPC_onefourpic_sku.css">
+<style>
+.item_pir{overflow: hidden;font-size: 16px;color:red;margin-top:10px;text-align:center;}</style>
+<div id="${fourfloor_id_sku}" class="goodlist_wrap_sku" style="background-color:#$bg_color;background:url($bg_img_sku)">
+	<div class="goodlist_content_outter_sku">
+		<div class="goodlist_mul_sku">
+			<ul>
+				<li class="import_item_outter_sku">
+					<div class="import_item_inner">
+						<div class="item_pic_sku">
+							<a class="main_pic_dd" href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">
+								<img src="${PCIMAGE_PATH}res/mall/image/big_load.gif" />
+							</a>
+							<div class="item_pic_minsku">
+								<ul class="minskuSwiper_wrap">								#set($i=0)
+									#foreach($item in ${one_goods})
+									#if($i<4)
+									<li class="minsku_pic">
+										#set($str=$!{item.get('prod_no')})                 #set($strleng=$str.length-3)
+					                    #set($str=$str.substring($strleng,$str.length))
+										<a href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">
+											#set($pic=$!{item.get('default_pic')})
+											#set($pic=$pic.substring(0,4))
+											#if('http'==$pic)
+											<img class="lazy" data-original="$item.get('default_pic')" src="${PCIMAGE_PATH}res/mall/image/big_load.gif"   width="46" height="46" />
+											#else
+											<img class="lazy" data-original="${PCIMAGE_PATH}$item.get('default_pic')" src="${PCIMAGE_PATH}res/mall/image/big_load.gif"width="46" height="46"/>
+											#end
+										</a>
+										<span class="hid_salepri">$item.get('sell_price')</span>
+										<span class="hid_yuanpri">$item.get('market_price')</span>
+										<span class="hid_proname">$item.get('commo_name')</span>
+										#end
+									</li>
+									#end
+								</ul>
+							</div>
+						</div>
+						<div class="item_info_ttt">
+							<div class="item_info_sku">
+								<div class="item_pri">
+									<div class="item_salepri">
+										<span>￥</span>
+										<span class="sell_price">待定</span>
+									</div>
+									<div class="item_yuanpri">
+										<span>￥</span>
+										<span class="market_price">待定</span>
+									</div>
+								</div>
+								<div class="item_desc_sku">
+									<a href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">$item.get('commo_name')</a>
+								</div>
+							</div>
+							<div class="buy_button">
+								<a target="_blank" href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html">
+									<img src="http://res.##/res/PCimg/buy.png">
+								</a>
+							</div>
+						</div> 
+					</div>
+				</li>	
+				<li class="import_item_outter_sku">
+					<div class="import_item_inner">
+						<div class="item_pic_sku">
+							<a class="main_pic_dd" href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">
+								<img src="${PCIMAGE_PATH}res/mall/image/big_load.gif" />
+							</a>
+							<div class="item_pic_minsku">
+								<ul class="minskuSwiper_wrap">								#set($i=0)
+									#foreach($item in ${two_goods})
+									#if($i<4)
+									<li class="minsku_pic">
+										#set($str=$!{item.get('prod_no')})                 #set($strleng=$str.length-3)
+					                    #set($str=$str.substring($strleng,$str.length))
+										<a href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">
+											#set($pic=$!{item.get('default_pic')})
+											#set($pic=$pic.substring(0,4))
+											#if('http'==$pic)
+											<img class="lazy" data-original="$item.get('default_pic')" src="${PCIMAGE_PATH}res/mall/image/big_load.gif"   width="46" height="46" />
+											#else
+											<img class="lazy" data-original="${PCIMAGE_PATH}$item.get('default_pic')" src="${PCIMAGE_PATH}res/mall/image/big_load.gif"width="46" height="46"/>
+											#end
+										</a>
+										<span class="hid_salepri">$item.get('sell_price')</span>
+										<span class="hid_yuanpri">$item.get('market_price')</span>
+										<span class="hid_proname">$item.get('commo_name')</span>
+										#end
+									</li>
+									#end
+								</ul>
+							</div>
+						</div>
+						<div class="item_info_ttt">
+							<div class="item_info_sku">
+								<div class="item_pri">
+									<div class="item_salepri">
+										<span>￥</span>
+										<span class="sell_price">待定</span>
+									</div>
+									<div class="item_yuanpri">
+										<span>￥</span>
+										<span class="market_price">待定</span>
+									</div>
+								</div>
+								<div class="item_desc_sku">
+									<a href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">$item.get('commo_name')</a>
+								</div>
+							</div>
+							<div class="buy_button">
+								<a target="_blank" href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html">
+									<img src="http://res.##/res/PCimg/buy.png">
+								</a>
+							</div>
+						</div> 
+					</div>
+				</li>
+				<li class="import_item_outter_sku">
+					<div class="import_item_inner">
+						<div class="item_pic_sku">
+							<a class="main_pic_dd" href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">
+								<img src="${PCIMAGE_PATH}res/mall/image/big_load.gif" />
+							</a>
+							<div class="item_pic_minsku">
+								<ul class="minskuSwiper_wrap">								#set($i=0)
+									#foreach($item in ${three_goods})
+									#if($i<4)
+									<li class="minsku_pic">
+										#set($str=$!{item.get('prod_no')})                 #set($strleng=$str.length-3)
+					                    #set($str=$str.substring($strleng,$str.length))
+										<a href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">
+											#set($pic=$!{item.get('default_pic')})
+											#set($pic=$pic.substring(0,4))
+											#if('http'==$pic)
+											<img class="lazy" data-original="$item.get('default_pic')" src="${PCIMAGE_PATH}res/mall/image/big_load.gif"   width="46" height="46" />
+											#else
+											<img class="lazy" data-original="${PCIMAGE_PATH}$item.get('default_pic')" src="${PCIMAGE_PATH}res/mall/image/big_load.gif"width="46" height="46"/>
+											#end
+										</a>
+										<span class="hid_salepri">$item.get('sell_price')</span>
+										<span class="hid_yuanpri">$item.get('market_price')</span>
+										<span class="hid_proname">$item.get('commo_name')</span>
+										#end
+									</li>
+									#end
+								</ul>
+							</div>
+						</div>
+						<div class="item_info_ttt">
+							<div class="item_info_sku">
+								<div class="item_pri">
+									<div class="item_salepri">
+										<span>￥</span>
+										<span class="sell_price">待定</span>
+									</div>
+									<div class="item_yuanpri">
+										<span>￥</span>
+										<span class="market_price">待定</span>
+									</div>
+								</div>
+								<div class="item_desc_sku">
+									<a href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">$item.get('commo_name')</a>
+								</div>
+							</div>
+							<div class="buy_button">
+								<a target="_blank" href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html">
+									<img src="http://res.##/res/PCimg/buy.png">
+								</a>
+							</div>
+						</div> 
+					</div>
+				</li>
+				<li class="import_item_outter_sku">
+					<div class="import_item_inner">
+						<div class="item_pic_sku">
+							<a class="main_pic_dd" href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">
+								<img src="${PCIMAGE_PATH}res/mall/image/big_load.gif" />
+							</a>
+							<div class="item_pic_minsku">
+								<ul class="minskuSwiper_wrap">								#set($i=0)
+									#foreach($item in ${four_goods})
+									#if($i<4)
+									<li class="minsku_pic">
+										#set($str=$!{item.get('prod_no')})                 #set($strleng=$str.length-3)
+					                    #set($str=$str.substring($strleng,$str.length))
+										<a href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">
+											#set($pic=$!{item.get('default_pic')})
+											#set($pic=$pic.substring(0,4))
+											#if('http'==$pic)
+											<img class="lazy" data-original="$item.get('default_pic')" src="${PCIMAGE_PATH}res/mall/image/big_load.gif"   width="46" height="46" />
+											#else
+											<img class="lazy" data-original="${PCIMAGE_PATH}$item.get('default_pic')" src="${PCIMAGE_PATH}res/mall/image/big_load.gif"width="46" height="46"/>
+											#end
+										</a>
+										<span class="hid_salepri">$item.get('sell_price')</span>
+										<span class="hid_yuanpri">$item.get('market_price')</span>
+										<span class="hid_proname">$item.get('commo_name')</span>
+										#end
+									</li>
+									#end
+								</ul>
+							</div>
+						</div>
+						<div class="item_info_ttt">
+							<div class="item_info_sku">
+								<div class="item_pri">
+									<div class="item_salepri">
+										<span>￥</span>
+										<span class="sell_price">待定</span>
+									</div>
+									<div class="item_yuanpri">
+										<span>￥</span>
+										<span class="market_price">待定</span>
+									</div>
+								</div>
+								<div class="item_desc_sku">
+									<a href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html" target="_blank">$item.get('commo_name')</a>
+								</div>
+							</div>
+							<div class="buy_button">
+								<a target="_blank" href="${PCWEBROOT_PATH}detail/$str/${item.get('prod_no')}.html">
+									<img src="http://res.##/res/PCimg/buy.png">
+								</a>
+							</div>
+						</div> 
+					</div>
+				</li>	
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="${PCRESOURCE_PATH}res/PCjs/floor_paddd.js"></script>
+
