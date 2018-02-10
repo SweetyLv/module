@@ -2,8 +2,6 @@
 * [自己的阿里云服务器相关部署](https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md)
 * [linux相关的命令](https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md)
 
-
-
 ### Node.js & github pages 
 * [基于node.js轻量级的github page + hexo 整个搭建过程](https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md)
 * [URL&HTTP协议&GET请求&POST请求](https://www.cnblogs.com/LDSmallCat/p/4942039.html)
