@@ -1,16 +1,16 @@
 ### node.js  & linux相关知识点
-* >[建立属于自己的github page + hexo整个过程参考信息]（https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md）
-* >[自己的阿里云服务器相关部署]（https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md）
-* >[linux相关的命令]（https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md）
+* [建立属于自己的github page + hexo整个过程参考信息]（https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md）
+* [自己的阿里云服务器相关部署]（https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md）
+* [linux相关的命令]（https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md）
 
 
 ### Node.js
-* >[URL&HTTP协议&GET请求&POST请求](https://www.cnblogs.com/LDSmallCat/p/4942039.html)
-* >[nodejs router.get怎么在里面调用方法](https://zhidao.baidu.com/question/1898708777239951660.html)
-* >[nodejs Express 4.x req.body req.query req.params 三种获取参数的方法](https://www.cnblogs.com/yourstars/p/5993376.html)
+* [URL&HTTP协议&GET请求&POST请求](https://www.cnblogs.com/LDSmallCat/p/4942039.html)
+* [nodejs router.get怎么在里面调用方法](https://zhidao.baidu.com/question/1898708777239951660.html)
+* [nodejs Express 4.x req.body req.query req.params 三种获取参数的方法](https://www.cnblogs.com/yourstars/p/5993376.html)
 
 ### velocity语法
-* >[Velocity !$ 和$!区别](https://www.cnblogs.com/sunxun/p/6553122.html)
+* [Velocity !$ 和$!区别](https://www.cnblogs.com/sunxun/p/6553122.html)
 
 ### 历史回顾
 * [第一个全站开发](http://htmlpreview.github.io/?https://github.com/SweetyLv/sweety_projects/blob/master/yichuan/index.html)
