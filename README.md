@@ -1,13 +1,19 @@
-### node.js  & linux相关知识点
-* [建立属于自己的github page + hexo整个过程参考信息](https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md)
+###  linux & 云服务
 * [自己的阿里云服务器相关部署](https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md)
 * [linux相关的命令](https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md)
+* 
 
 
-### Node.js
+### Node.js & github pages 
+* [基于node.js轻量级的github page + hexo 整个搭建过程](https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md)
 * [URL&HTTP协议&GET请求&POST请求](https://www.cnblogs.com/LDSmallCat/p/4942039.html)
 * [nodejs router.get怎么在里面调用方法](https://zhidao.baidu.com/question/1898708777239951660.html)
 * [nodejs Express 4.x req.body req.query req.params 三种获取参数的方法](https://www.cnblogs.com/yourstars/p/5993376.html)
+* 搭建github pages时候，利用个人域名和DNS服务器dnspod运营商的设置：
+>  DNS Server: f1g1ns1.dnspod.net  和  f1g1ns2.dnspod.net
+> 随着个人项目的不断完善，发现github pages不能满足个人需求，于是就有了自己的项目云服务，则会去阿里云搭建一个属于个人的网站项目
+> 便有了更改DNS的解析设置（在这里记录一下，以便日后翻看）
+> DNS Server : ns1.alidns.com  和  ns2.alidns.com
 
 ### velocity语法
 * [Velocity !$ 和$!区别](https://www.cnblogs.com/sunxun/p/6553122.html)
