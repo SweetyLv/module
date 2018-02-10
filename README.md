@@ -1,7 +1,7 @@
 ### node.js  & linux相关知识点
-* [建立属于自己的github page + hexo整个过程参考信息]（https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md）
-* [自己的阿里云服务器相关部署]（https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md）
-* [linux相关的命令]（https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md）
+* [建立属于自己的github page + hexo整个过程参考信息](https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md）
+* [自己的阿里云服务器相关部署](https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md）
+* [linux相关的命令](https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/knowlege.md）
 
 
 ### Node.js
