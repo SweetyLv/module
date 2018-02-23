@@ -3,6 +3,7 @@
 ### 学习笔记
 * [bootstrap国内推荐使用 BootCDN 上的库](https://github.com/SweetyLv/sweety_projects-bootstrap/blob/master/bootstrap_learning_mark.md)
 * [nodeJs的学习笔记](https://github.com/SweetyLv/sweety_projects-bootstrap/tree/master/nodeJs)
+* [更多GithubPages](https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/githubpages_knowlege.md)
 
 ### 历史回顾
 * [第一个全站开发](http://htmlpreview.github.io/?https://github.com/SweetyLv/sweety_projects/blob/master/yichuan/index.html)
