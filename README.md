@@ -6,9 +6,9 @@
 * [GithubPages笔记](https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/githubpages_knowlege.md)
 * [GithubKnowlege笔记](https://github.com/SweetyLv/sweety_node_php_knowlege/blob/master/github_knowlege.md)
 
-### 历史回顾
+### 本人前端生涯的经典历史回顾
 * [第一个全站开发](http://htmlpreview.github.io/?https://github.com/SweetyLv/sweety_projects/blob/master/yichuan/index.html)
-* [2016年css3和轮播效果活动页](http://htmlpreview.github.io/?https://github.com/SweetyLv/sweety_projects/blob/master/cross/index.html)
+* [第一个css3精美页面](http://htmlpreview.github.io/?https://github.com/SweetyLv/sweety_projects/blob/master/cross/index.html)
 * [2015年粗糙的动漫美女轮播效果](http://htmlpreview.github.com/?https://github.com/SweetyLv/sweety_projects/blob/master/beauty_girl/index.html)
 > <a>回看过去的历史作品，很粗糙但值得深思和回味，不忘初衷，锲而不舍</a>
 ### sweety's 模板&组件足迹
