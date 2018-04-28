@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+<script src="jquery-1.7.2.min.js">
+</script>
+<link rel="stylesheet" type="text/css" href="/st.css">
+</head>
+<body style="height:2000px;">
+	 #foreach($item in ${pic1}) 
+<div id="big" class="fixediv fixediv-l " style="display:none;">
+	<div class="btn"><a href="javascript:void(0);" onClick="bar_hidden()">关闭</a> </div>
+	<a href="${item.get('link1')}" target="_blank"><img  width="${item.get('width1')}" height="${item.get('height1')}" src="${item.get('img1')}" alt="${item.get('alt1')}" /></a>
+</div>
+     #end
+     #foreach($item in ${pic2})
+<div id="small" class="fixediv fixediv-l" style="display:none;">
+	<div class="btn"><a href="javascript:void(0);" onClick="bar_show()">展开</a></div>
+	<a href="${item.get('link2')}" target="_blank"><img width="${item.get('width2')}" height="${item.get('height2')}"  src="${item.get('img2')}" alt="${item.get('alt2')}" /></a>
+</div>
+     #end
+<script type="text/javascript" src="move.js"></script>
+</body>
+</html>  
